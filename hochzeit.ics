@@ -1,20 +1,19 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Kevin und Alina//Hochzeit//DE
+PRODID:-//Alina und Kevin//Hochzeit//DE
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:kevin-alina-20261217@revinkabe.github.io
-DTSTAMP:20261006T120000Z
-DTSTART;VALUE=DATE:20261217
-DTEND;VALUE=DATE:20261218
-SUMMARY:Hochzeit von Kevin und Alina
+DTSTAMP:20261006T142606Z
+SEQUENCE:1
+DTSTART:20261217T113000Z
+SUMMARY:Hochzeit von Alina und Kevin
 LOCATION:Römer\, Römerberg\, 60311 Frankfurt am Main
-DESCRIPTION:Standesamtliche Hochzeit von Kevin Klaus Rabe und Alina Alijaj.
- \nDie genaue Uhrzeit wird noch bekanntgegeben.
- \nDieser Eintrag merkt vorerst nur das Datum vor.
+DESCRIPTION:Standesamtliche Hochzeit von Alina Alijaj und Kevin Klaus Rabe.
+ \nBeginn: 12:30 Uhr mittags (Ortszeit Frankfurt am Main).
  \nDresscode: Wird noch bekanntgegeben.
-TRANSP:TRANSPARENT
+TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 END:VCALENDAR

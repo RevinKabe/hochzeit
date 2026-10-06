@@ -1,4 +1,4 @@
-// Calendar-day countdown in the wedding's time zone. No guessed ceremony time.
+// Calendar-day countdown in the wedding's time zone (Europe/Berlin).
 const dayParts = new Intl.DateTimeFormat('en-CA', {
   timeZone: 'Europe/Berlin', year: 'numeric', month: '2-digit', day: '2-digit'
 }).formatToParts(new Date());
