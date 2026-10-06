@@ -13,7 +13,7 @@ Website: https://revinkabe.github.io/hochzeit/
 - `assets/roemer.jpg`: Foto des Trauorts.
 - `assets/alina-kevin.png`: Euer unverändertes Paarfoto (1500 × 2000 Pixel).
 
-Das Paarfoto sitzt vollständig innerhalb des bogenförmigen Rahmens. Die Klasse `.couple-photo` bewahrt das Seitenverhältnis mit `width: 100%`, `height: auto` und `object-fit: contain`. Das Foto wird weder beschnitten noch gezoomt oder von Text überlagert. Bei einem späteren Fotoaustausch dessen natürliche Maße und den Alternativtext aktualisieren; kein `object-fit: cover` verwenden. Alina steht in allen sichtbaren Namensnennungen vor Kevin.
+Das Paarfoto füllt den bogenförmigen Rahmen bis zum Rand. Die Klasse `.couple-photo` bewahrt das ursprüngliche Seitenverhältnis von 3:4 mit `width: 100%`, `height: auto` und `object-fit: contain`, ohne zusätzlichen Zoom. Die Bogenform blendet nur die oberen Ecken des Hintergrunds aus; beide Personen bleiben sichtbar. Die feinen Goldlinien liegen über dem Bild, Text überlagert das Foto nicht. Bei einem späteren Fotoaustausch dessen natürliche Maße, Seitenverhältnis und Alternativtext aktualisieren. Alina steht in allen sichtbaren Namensnennungen vor Kevin.
 
 ## Lokal ansehen
 

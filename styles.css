@@ -134,11 +134,11 @@ footer p{margin:0}
   .closing{padding-top:62px;padding-bottom:52px}.countdown{margin-bottom:49px}.closing h2{font-size:46px}.signature{font-size:43px}
   footer{margin:0 24px;padding:24px 0;display:block;text-align:center;font-size:12px}.credits{text-align:center;margin-top:12px}
 }
-/* Preserve the complete photograph inside the arched mat, without cropping. */
-.portrait.portrait-photo-frame{display:block;min-height:0;aspect-ratio:auto;padding:40% 12% 8%;overflow:visible}
-.portrait-photo-frame .portrait-top{position:absolute;top:9%;left:15%;right:15%;max-width:none;margin:0;font:italic 32px/1.2 var(--serif);letter-spacing:0;text-align:center}
+/* Fill the frame at the photo's original ratio; only the arch masks the corners. */
+.portrait.portrait-photo-frame{display:block;min-height:0;aspect-ratio:auto;padding:0;overflow:hidden;border-color:#b49972}
+.portrait-photo-frame .portrait-border{z-index:1;border-color:#ead8b8;opacity:.85}
+.portrait-photo-frame .portrait-border::after{border-color:#ead8b870}
 .couple-photo{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;object-position:center;transform:none;filter:none}
-@media(max-width:700px){.portrait-photo-frame .portrait-border{inset:10px}.portrait-photo-frame .portrait-border::after{inset:4px}.portrait-photo-frame .portrait-top{font-size:27px}}
-@media(max-width:360px){.portrait-photo-frame .portrait-top{font-size:24px}}
+@media(max-width:700px){.portrait-photo-frame .portrait-border{inset:10px}.portrait-photo-frame .portrait-border::after{inset:4px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
 @media print{body{background:white}nav,.button,.text-link,.venue-source,.credits,.countdown{display:none}.hero{padding:35px;gap:35px}.section-pad{padding:30px}.venue{break-inside:avoid}.venue-photo{min-height:350px}.venue-copy,.closing{padding:25px}.site-header{padding:15px 35px}}
