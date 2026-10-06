@@ -22,7 +22,19 @@ Für das spätere Paarfoto kann in `index.html` der Block `.portrait` durch ein 
 
 Unter **Settings → Pages** die Quelle **Deploy from a branch**, Branch **main** und Ordner **/ (root)** auswählen. Änderungen auf `main` werden automatisch veröffentlicht.
 
-Die Website und das Repository sind öffentlich. Die gesetzte `noindex`-Angabe bittet Suchmaschinen, die Seite nicht zu indexieren; sie ist kein Zugangsschutz. Die Website verwendet keine Analysewerkzeuge, Cookies oder extern geladenen Schriften. Karten werden erst über einen externen Link geöffnet. Der Hostinganbieter kann Zugriffsdaten verarbeiten.
+Die Website verwendet keine Analysewerkzeuge, Cookies oder extern geladenen Schriften. Karten werden erst über einen externen Link geöffnet. Der Hostinganbieter kann Zugriffsdaten verarbeiten.
+
+## Crawler und Privatsphäre
+
+Die Website und das Repository sind derzeit öffentlich. Die HTML-Metadaten bitten unterstützende Suchmaschinen, die Seite nicht zu indexieren, keine Textauszüge und keine Bildvorschauen anzuzeigen. `no-referrer` verhindert, dass die Browser-Anfragen an andere Seiten die Adresse der Einladung als Referrer mitsenden.
+
+Die Datei **https://revinkabe.github.io/robots.txt** bittet alle regelkonformen Crawler, `/hochzeit/` und die zugehörigen Dateien nicht abzurufen. Andere Projektseiten bleiben unberührt. Die aktive Datei wird im Hilfs-Repository [RevinKabe/revinkabe.github.io](https://github.com/RevinKabe/revinkabe.github.io) verwaltet; `privacy/host-robots.txt` ist die lokale Referenzkopie. Bei Änderungen beide Kopien aktualisieren. Eine Datei unter `/hochzeit/robots.txt` würde nicht als robots.txt dieses Hosts gelten.
+
+Diese Regeln sind **kein Zugangsschutz**. Bots können sie ignorieren; die Quelldateien und die Git-Historie dieses öffentlichen Repositorys bleiben lesbar. Für tatsächliche Vertraulichkeit müssen sowohl Website-Inhalte und Downloads als auch das Quell-Repository geschützt werden. Bereits angefertigte Kopien lassen sich damit nicht zurückholen.
+
+`robots.txt` verhindert bei unterstützenden Bots das Abrufen der Inhalte. Dadurch können diese Bots auch das HTML-`noindex` nicht neu auslesen. Bereits bekannte URLs können deshalb weiterhin ohne Inhalt als Verweis erscheinen; Crawling-Sperre und Entfernung aus einem Suchindex sind unterschiedliche Vorgänge.
+
+Quellen: [robots.txt richtig veröffentlichen](https://developers.google.com/crawling/docs/robots-txt/create-robots-txt), [Grenzen von robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro), [noindex und Crawling](https://developers.google.com/search/docs/crawling-indexing/block-indexing).
 
 ## Bildnachweis
 

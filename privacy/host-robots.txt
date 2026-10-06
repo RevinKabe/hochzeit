@@ -1,0 +1,5 @@
+# Publish at https://revinkabe.github.io/robots.txt, not /hochzeit/robots.txt.
+# Voluntary crawler instructions for the wedding site only. Not authentication.
+User-agent: *
+Disallow: /hochzeit/
+Disallow: /hochzeit$
