@@ -11,8 +11,9 @@ Website: https://revinkabe.github.io/hochzeit/
 - `hochzeit.ics`: Kalendereintrag mit Beginn um 12:30 Uhr in Frankfurt (11:30 UTC). Eine Endzeit ist nicht festgelegt. Die bestehende Ereignis-ID bleibt zur Wiedererkennung bei erneuten Importen erhalten.
 - `script.js`: Tages-Countdown für die Zeitzone Europe/Berlin.
 - `assets/roemer.jpg`: Foto des Trauorts.
+- `assets/alina-kevin.png`: Euer unverändertes Paarfoto (1500 × 2000 Pixel).
 
-Für das spätere Paarfoto kann in `index.html` der Block `.portrait` durch ein Bild ersetzt werden. Die umliegende Gestaltung und das Datumssiegel können bleiben. Den Alternativtext anpassen und in `styles.css` für das Foto feste Proportionen sowie `object-fit: cover` setzen. Alina steht in allen sichtbaren Namensnennungen vor Kevin.
+Das Paarfoto sitzt vollständig innerhalb des bogenförmigen Rahmens. Die Klasse `.couple-photo` bewahrt das Seitenverhältnis mit `width: 100%`, `height: auto` und `object-fit: contain`. Das Foto wird weder beschnitten noch gezoomt oder von Text überlagert. Bei einem späteren Fotoaustausch dessen natürliche Maße und den Alternativtext aktualisieren; kein `object-fit: cover` verwenden. Alina steht in allen sichtbaren Namensnennungen vor Kevin.
 
 ## Lokal ansehen
 
